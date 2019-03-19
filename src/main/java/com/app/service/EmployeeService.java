@@ -5,9 +5,11 @@ import com.app.dao.EmployeeDao;
 import com.app.model.Employee;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 public class EmployeeService {
 
+    //@PersistenceContext(unitName = "employee")
     private EntityManager em = new JpaConfig().createEntityManager();
 
     private EmployeeDao employeeDao = new EmployeeDao(em);
