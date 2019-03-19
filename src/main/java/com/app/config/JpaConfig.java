@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 public class JpaConfig {
     private static final String PERSISTENCE_UNIT_NAME = "employee";
-    private static EntityManagerFactory factory =  Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
+    private static EntityManagerFactory factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
 
     public EntityManager createEntityManager(){
         EntityManager em = factory.createEntityManager();
